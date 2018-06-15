@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link href="/css/common.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<%- include('./common/header.ejs') %>
+	<div class="wrap">
+		<%- include('./common/left.ejs') %>
+		<div class="index-rht">
+			<% if(list.length > 0) { %>
+			<div class="">已发布的文章：</div>
+			<ul class="">
+				<% list.forEach(function(item){ %>
+				<li><a href="/article/detail/<%= item.id %>"><div><%= item.title %></div><div><%= item.creat_time %></div></a></li>
+				<% }) %>
+			</ul>
+			<% }else{ %>
+				您还没有添加任何信息！
+			<% } %>
+		</div>
+	</div>
+</body>
+</html>

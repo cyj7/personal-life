@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+</head>
+<body>
+	<form method="post">
+		<div><label for=""><span>用户名：</span><input type="text" name="username" value=""></label></div>
+		<div><label for=""><span>密码：</span><input type="password" name="password" value=""></label></div>
+		<p><% if ( typeof error != 'undefined'){ %><%= error %><% } %></p>
+		<div><input type="submit" value="提交"></div>
+	</form>
+</body>
+</html>

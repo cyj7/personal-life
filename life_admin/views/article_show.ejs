@@ -1,0 +1,19 @@
+<h></h<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= data.title || title %></title>
+	<link href="/css/common.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<%- include('./common/header.ejs') %>
+	<div class="wrap">
+		<%- include('./common/left.ejs') %>
+		<div class="index-rht">
+			<h1><%=data.title %></h1>
+			<div><%- data.content%></div>
+		</div>
+	</div>
+	
+</body>
+</html>
