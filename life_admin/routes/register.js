@@ -16,7 +16,10 @@ router.route('/').get(function(req,res){
 	var md5 = crypto.createHash("md5");
 	var pwd = md5.update(req.body.pwd).digest('hex');
 	var username = req.body.username;
-	dbConfig.selectFun("user_name", username, function(result){
+	dbConfig.selectFun("user_name", username, function(err, result){
+		if(typeof err != 'undefined'){
+			return res.send({'error': '服务器出错了，请稍后！'});
+		}
 		if(typeof(result) != 'undefined' && result.length > 0){
 			res.render('register',{'title': '注册', 'error': '用户名已存在', 'username': username, 'pwd': req.body.pwd});
 		}else{

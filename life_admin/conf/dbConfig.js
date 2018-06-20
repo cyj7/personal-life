@@ -28,8 +28,8 @@ function insertFun(db, username, password, callback) { //插入数据
 function selectFun(user, username, callback) {//查询 密码
 	var selStr = 'select ' + user + ' from admin where user_name=' + username;
 	db.query(selStr, function(err, result){
-		if(err) return err;
-		callback(result);
+		// if(err) return err;
+		callback(err, result);
 	});
 }
 
