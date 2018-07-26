@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var router = express.Router();
-var dbConfig = require("../conf/dbConfig");
+var dbConfig = require("../db/dbConfig");
 
 
 

@@ -1,0 +1,8 @@
+//数据库配置
+module.exports = {
+	host: 'localhost',
+	user: 'root',
+	password: 'root',
+	database: 'life',
+	// port: 3306
+}

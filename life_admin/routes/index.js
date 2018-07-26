@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var dbConfig = require("../conf/dbConfig");
+var dbConfig = require("../db/dbConfig");
 
 app.get("/", function(req, res){
 	if(req.session.user){
@@ -14,6 +14,6 @@ app.get("/", function(req, res){
 	}else{
 		res.redirect('/login');
 	}
-})
+});
 
 module.exports = app;

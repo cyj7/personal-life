@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var dbConfig = require("../conf/dbConfig");
+var dbConfig = require("../db/dbConfig");
 // var util = require('util');
 var crypto = require("crypto");
 
