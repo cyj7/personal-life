@@ -1,2 +1,2 @@
 # personal-life
-练手
+用来练手的nodejs小项目
