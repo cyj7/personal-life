@@ -25,8 +25,7 @@ router.route('/').get(function(req, res){
 				// res.render('category',{"username": req.session.user, "categoryList": result});
 			});
 		}
-		
-	});
+	}, 'category');
 });
 
 router.route('/edit').post(function(req, res){ //编辑

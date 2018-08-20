@@ -1,0 +1,16 @@
+.category-wrap{
+	padding: 30rpx;
+	overflow: hidden;
+}
+.category-item{
+	width:33.33%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+.item{
+	border: 1rpx solid #d1d1d1;
+	margin: 1rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+}

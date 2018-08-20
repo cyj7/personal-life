@@ -13,9 +13,9 @@ router.route('/').get(function(req,res){
 	var md5 = crypto.createHash("md5");
 	var pwd = md5.update(req.body.password).digest('hex');
 	dbConfig.selectFun("password", req.body.username, function(err, result){
-		if(typeof err != 'undefined'){
-			return res.send({'error': '服务器出错了，请稍后！'});
-		}
+		// if(typeof err != 'undefined'){
+		// 	return res.send({'error': '服务器出错了，请稍后！'});
+		// }
 		if(result[0].password === pwd){
 			req.session.user = req.body.username;
 			res.redirect("/");

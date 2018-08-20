@@ -61,7 +61,7 @@ app.use('/loginout', loginOut); //退出
 app.use('/category', category); //栏目
 app.use('/article', article); //文章
 
-var server = app.listen(3000, function(){
+var server = app.listen(3008, function(){
 	var host = server.address().address;
 	var port = server.address().port;
 	console.log('Example app listening at http://%s:%s', host, port);

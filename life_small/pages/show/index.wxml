@@ -1,0 +1,4 @@
+<view class="category-wrap">
+  <view class="article-tit">{{ title }}</view>
+  <rich-text nodes="{{body}}">{{body}}</rich-text>
+</view>

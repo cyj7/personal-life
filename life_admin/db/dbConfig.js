@@ -10,7 +10,7 @@ var db = mysql.createConnection({ //建立数据库连接
 });
 
 //连接数据库
-// db.connect();
+db.connect();
 
 function insertFun(db, username, password, callback) { //插入数据
 	var insertStr = 'insert into admin(user_name, password) value(?,?)';

@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-section page-section-spacing swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item"><image src="{{item}}" mode="aspectFill"></image></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="hot-commend-tit mt30">
+    <text class="tit"></text>
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="commend-list-box">
+    <view class="list-item mt30" wx:for="{{commendList}}" wx:key="id" wx:for-item="items">
+      <navigator url="../show/index?id={{items.id}}">
+        <view class="commend-img-box"><image src="{{items.imgUrl}}" mode="aspectFill" class="commend-img"></image></view>
+        <text class="commend-tit">{{items.title}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

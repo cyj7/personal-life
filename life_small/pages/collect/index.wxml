@@ -1,0 +1,8 @@
+<view class="category-wrap commend-list-box">
+	<view class="list-item mt30" wx:for="{{lists}}" wx:key="id" wx:for-item="items">
+	  <navigator url="../show/index?id={{items.id}}">
+	    <view class="commend-img-box"><image src="{{items.imgUrl}}" mode="aspectFill" class="commend-img"></image></view>
+	    <text class="commend-tit">{{items.title}}</text>
+	  </navigator>
+	</view>
+</view>

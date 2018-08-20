@@ -1,0 +1,3 @@
+<view class="category-wrap">
+  <view class="category-item" wx:for="{{categorys}}"><navigator url="../list/index?id={{item.id}}" class="item">{{item.title}}</navigator></view>
+</view>

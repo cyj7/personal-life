@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/category/index",
+    "pages/collect/index",
+    "pages/list/index",
+    "pages/show/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "Demo"
+  },
+  "tabBar": {
+    "selectedColor": "#9ec79a",
+    "list": [{
+      "iconPath": "images/icon/index.png",
+      "selectedIconPath": "images/icon/index_a.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "iconPath": "images/icon/category.png",
+      "selectedIconPath": "images/icon/category_a.png",
+      "pagePath": "pages/category/index",
+      "text": "分类"
+    },{
+      "iconPath": "images/icon/collect.png",
+      "selectedIconPath": "images/icon/collect_a.png",
+      "pagePath": "pages/collect/index",
+      "text": "我的收藏"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
