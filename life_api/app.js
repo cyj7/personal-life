@@ -7,3 +7,5 @@ const app = express();
 app.get('/getNewList', function(req,res){
 	res.send()
 });
+
+app.listen(3009);
