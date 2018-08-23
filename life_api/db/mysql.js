@@ -1,1 +1,3 @@
-import mySql from 'mySql'
+import mysql from 'mySql';
+
+module.exports = 
